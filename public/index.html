@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube 음성 인식</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>YouTube 음성 인식</h1>
+        
+        <div class="input-section">
+            <input type="text" id="videoUrl" placeholder="YouTube URL을 입력하세요">
+            <button id="convertBtn">변환 시작</button>
+        </div>
+
+        <div id="status" style="display: none;">처리 중...</div>
+
+        <div class="result-section">
+            <h2>변환 결과</h2>
+            <div id="resultText" class="result-text"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

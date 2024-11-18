@@ -1,0 +1,24 @@
+const { execSync } = require('child_process');
+
+console.log('=== 테스트 시작 ===');
+
+const videoUrl = 'https://www.youtube.com/watch?v=7IW1kvtKp1o';
+
+try {
+    // 1단계: 비디오 다운로드 명령어
+    const command = `yt-dlp -x --audio-format wav '${videoUrl}'`;
+    
+    console.log('실행할 명령어:', command);
+    console.log('다운로드 시작...');
+    
+    // 명령어 실행
+    const output = execSync(command, { encoding: 'utf-8' });
+    
+    console.log('실행 결과:', output);
+    console.log('다운로드 완료!');
+    
+} catch (error) {
+    console.log('에러 발생:', error.message);
+}
+
+console.log('=== 테스트 종료 ===');

@@ -1,0 +1,212 @@
+body {
+    max-width: 1200px;
+    margin: 15px auto;
+    padding: 0 15px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: left;
+    margin: 0 0 15px 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input-section {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+}
+
+#videoUrl {
+    width: 70%;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.status-section {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    width: 0%;
+    height: 100%;
+    background-color: #007bff;
+    transition: width 0.3s ease;
+}
+
+.result-section {
+    margin-top: 30px;
+}
+
+.result-text {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    min-height: 100px;
+    white-space: pre-wrap;
+    border: 1px solid #ddd;
+}
+
+.hidden {
+    display: none;
+}
+
+#status {
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    color: #666;
+}
+
+.meta-info, .summary, .transcript {
+    text-align: left;
+    text-indent: 0;
+}
+
+.meta-info p, .summary p, .transcript p {
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+}
+
+.meta-info {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.meta-info h3 {
+    margin: 0 0 5px 0;
+    color: #333;
+}
+
+.summary {
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.summary h3 {
+    margin: 0 0 5px 0;
+}
+
+.transcript {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+strong {
+    color: #2c3e50;
+}
+
+.meta-info p {
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+.meta-info p:last-child {
+    margin-bottom: 0;
+}
+
+.meta-info strong {
+    display: inline-block;
+    width: 70px;
+    text-align: left;
+}
+
+/* 태그 스타일 */
+.meta-info p:has(strong:contains("태그")) {
+    line-height: 1.8;
+    word-break: break-all;
+}
+
+.transcript-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.transcript {
+    flex: 1;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    line-height: 1.4;
+}
+
+.first {
+    background-color: #f8f9fa;
+}
+
+.second {
+    background-color: #fff;
+}
+
+.transcript h3 {
+    margin: 0 0 5px 0;
+    color: #2c3e50;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+h3 {
+    margin: 0 0 5px 0;
+}
+
+p {
+    margin: 0;
+}
+
+.meta-row {
+    margin: 0;
+    padding: 0;
+}
+
+.meta-row strong {
+    display: inline-block;
+    min-width: 70px;
+    margin-left: 0;
+    padding-left: 0;
+    text-align: left;
+} 
